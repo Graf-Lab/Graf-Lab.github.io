@@ -35,4 +35,110 @@
             <button class="cta-button">Explore My Work</button>
         </div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="tag-cloud">
+            <span class="tag" data-filter="python">Python</span>
+            <span class="tag" data-filter="java">Java</span>
+            <span class="tag" data-filter="git">Git</span>
+            <span class="tag" data-filter="web-dev">Web Development</span>
+            <span class="tag" data-filter="ai">AI</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-filters">
+            <span class="filter-tag active" data-filter="all">All</span>
+            <span class="filter-tag" data-filter="web-dev"
+                >Web Development</span
+            >
+            <span class="filter-tag" data-filter="python">Python</span>
+            <span class="filter-tag" data-filter="ai">AI</span>
+            <span class="filter-tag" data-filter="automation">Automation</span>
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-tags="web-dev python">
+                <h3>Project 1</h3>
+                <p>A web application built with Python and Flask.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Web Development</span>
+                </div>
+                <a href="#" class="project-link">View on GitHub</a>
+            </div>
+            <div class="project-card" data-tags="ai python">
+                <h3>Project 2</h3>
+                <p>An AI model for data analysis.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>AI</span>
+                </div>
+                <a href="#" class="project-link">View on GitHub</a>
+            </div>
+            <div class="project-card" data-tags="web-dev">
+                <h3>Project 3</h3>
+                <p>A responsive website using HTML, CSS, and JavaScript.</p>
+                <div class="project-tags">
+                    <span>Web Development</span>
+                </div>
+                <a href="#" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>My Resume</h2>
+        <button class="download-button">Download Resume (PDF)</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <p>Email: grafton@example.com</p>
+            <p>Phone: +41 12 345 6789</p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/graftonlabrum</a></p>
+            <p>GitHub: <a href="#">github.com/graftonlabrum</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Grafton Labrum. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Filtering -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterTags = document.querySelectorAll(".filter-tag");
+            const projectCards = document.querySelectorAll(".project-card");
+
+            filterTags.forEach((tag) => {
+                tag.addEventListener("click", function () {
+                    const filter = this.getAttribute("data-filter");
+
+                    // Update active filter
+                    filterTags.forEach((t) => t.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Filter projects
+                    projectCards.forEach((card) => {
+                        const cardTags = card
+                            .getAttribute("data-tags")
+                            .split(" ");
+                        if (filter === "all" || cardTags.includes(filter)) {
+                            card.style.display = "block";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
