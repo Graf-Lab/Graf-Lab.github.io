@@ -1,0 +1,154 @@
+{
+    "en": {
+        "header": {
+            "logo": "Grafton Labrum",
+            "navLinks": [
+                { "href": "home", "text": "Home" },
+                { "href": "skills", "text": "Skills" },
+                { "href": "projects", "text": "Projects" },
+                { "href": "resume", "text": "Resume" },
+                { "href": "contact", "text": "Contact" }
+            ],
+            "themeToggle": "Dark Mode"
+        },
+        "hero": {
+            "name": "Grafton Labrum",
+            "tagline": "Computer Science Student | Web Developer | AI Enthusiast",
+            "ctaButton": "Explore My Work"
+        },
+        "skills": {
+            "title": "My Skills",
+            "tags": [
+                { "href": "python", "text": "Python" },
+                { "href": "java", "text": "Java" },
+                { "href": "git", "text": "Git" },
+                { "href": "web-dev", "text": "Web Development" },
+                { "href": "ai", "text": "AI" }
+            ]
+        },
+        "projects": {
+            "title": "My Projects",
+            "filters": [
+                { "href": "all", "text": "All", "active": true },
+                { "href": "web-dev", "text": "Web Development" },
+                { "href": "python", "text": "Python" },
+                { "href": "ai", "text": "AI" },
+                { "href": "automation", "text": "Automation" }
+            ],
+            "cards": [
+                {
+                    "title": "Project 1",
+                    "description": "A web application built with Python and Flask.",
+                    "tags": ["web-dev", "python"],
+                    "linkText": "View on GitHub"
+                },
+                {
+                    "title": "Project 2",
+                    "description": "An AI model for data analysis.",
+                    "tags": ["ai", "python"],
+                    "linkText": "View on GitHub"
+                },
+                {
+                    "title": "Project 3",
+                    "description": "A responsive website using HTML, CSS, and JavaScript.",
+                    "tags": ["web-dev"],
+                    "linkText": "View on GitHub"
+                }
+            ]
+        },
+        "resume": {
+            "title": "My Resume",
+            "downloadButton": "Download Resume (PDF)"
+        },
+        "contact": {
+            "title": "Get In Touch",
+            "email": "Email",
+            "emailLink": "grafton@example.com",
+            "phone": "Phone",
+            "phoneNumber": "+41 77 267 61 07",
+            "linkedin": "LinkedIn",
+            "linkedinLink": "linkedin.com/in/graftonlabrum",
+            "github": "GitHub",
+            "githubLink": "github.com/graftonlabrum"
+        },
+        "footer": {
+            "copyright": "© 2026 Grafton Labrum. All rights reserved."
+        }
+    },
+    "de": {
+        "header": {
+            "logo": "Grafton Labrum",
+            "navLinks": [
+                { "href": "home", "text": "Startseite" },
+                { "href": "skills", "text": "Fähigkeiten" },
+                { "href": "projects", "text": "Projekte" },
+                { "href": "resume", "text": "Lebenslauf" },
+                { "href": "contact", "text": "Kontakt" }
+            ],
+            "themeToggle": "Dunkelmodus"
+        },
+        "hero": {
+            "name": "Grafton Labrum",
+            "tagline": "Informatikstudent | Webentwickler | KI-Enthusiast",
+            "ctaButton": "Meine Arbeit entdecken"
+        },
+        "skills": {
+            "title": "Meine Fähigkeiten",
+            "tags": [
+                { "href": "python", "text": "Python" },
+                { "href": "java", "text": "Java" },
+                { "href": "git", "text": "Git" },
+                { "href": "web-dev", "text": "Webentwicklung" },
+                { "href": "ai", "text": "KI" }
+            ]
+        },
+        "projects": {
+            "title": "Meine Projekte",
+            "filters": [
+                { "href": "all", "text": "Alle", "active": true },
+                { "href": "web-dev", "text": "Webentwicklung" },
+                { "href": "python", "text": "Python" },
+                { "href": "ai", "text": "KI" },
+                { "href": "automation", "text": "Automatisierung" }
+            ],
+            "cards": [
+                {
+                    "title": "Projekt 1",
+                    "description": "Eine Webanwendung, die mit Python und Flask erstellt wurde.",
+                    "tags": ["web-dev", "python"],
+                    "linkText": "Auf GitHub anzeigen"
+                },
+                {
+                    "title": "Projekt 2",
+                    "description": "Ein KI-Modell zur Datenanalyse.",
+                    "tags": ["ai", "python"],
+                    "linkText": "Auf GitHub anzeigen"
+                },
+                {
+                    "title": "Projekt 3",
+                    "description": "Eine responsive Website mit HTML, CSS und JavaScript.",
+                    "tags": ["web-dev"],
+                    "linkText": "Auf GitHub anzeigen"
+                }
+            ]
+        },
+        "resume": {
+            "title": "Mein Lebenslauf",
+            "downloadButton": "Lebenslauf herunterladen (PDF)"
+        },
+        "contact": {
+            "title": "Kontaktieren Sie mich",
+            "email": "E-Mail",
+            "emailLink": "grafton@example.com",
+            "phone": "Telefon",
+            "phoneNumber": "+41 77 267 61 07",
+            "linkedin": "LinkedIn",
+            "linkedinLink": "linkedin.com/in/graftonlabrum",
+            "github": "GitHub",
+            "githubLink": "github.com/graftonlabrum"
+        },
+        "footer": {
+            "copyright": "© 2026 Grafton Labrum. Alle Rechte vorbehalten."
+        }
+    }
+}
