@@ -7,14 +7,18 @@
         <title>Graf Lab</title>
     </head>
     <header>
-        <h1>Grafton Labrum</h1>
-        <p>Computer Science Student & Aspiring Software Engineer</p>
+        <h1 data-i18n="header-title">Grafton Labrum</h1>
+        <p data-i18n="header-purpose">
+            Computer Science Student & Aspiring Software Engineer
+        </p>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li data-i18n="nav-about"><a href="#about">About</a></li>
+                <li data-i18n="nav-projects">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li data-i18n="nav-skills"><a href="#skills">Skills</a></li>
+                <li data-i18n="nav-contact"><a href="#contact">Contact</a></li>
             </ul>
             <select id="languageToggle" class="languageSwitch">
                 <option value="en">English</option>
@@ -25,10 +29,101 @@
     </header>
     <br />
     <body>
-        <div id="about" class="container"></div>
-        <div id="projects" class="container"></div>
-        <div id="skills" class="container"></div>
-        <div id="contact" class="container"></div>
+        <div class="container">
+            <div>
+                <section id="about" class="about">
+                    <h2 data-i18n="about-title">About Me</h2>
+                    <p data-i18n="about-content-1">
+                        I am a computer science student with a passion for
+                        software development, data management, and hardware
+                        engineering. My academic journey has equipped me with a
+                        strong foundation in programming, algorithms, and system
+                        design. I am particularly interested in open-source
+                        technologies and building efficient, scalable solutions.
+                    </p>
+                    <p data-i18n="about-content-2">
+                        Outside of academics, I enjoy experimenting with new
+                        technologies, contributing to open-source projects, and
+                        designing hardware systems. I am currently working on a
+                        custom PC build, focusing on compatibility and
+                        performance.
+                    </p>
+                </section>
+                <section id="projects" class="projects">
+                    <h2 data-i18n="projects-title">Projects</h2>
+                    <div class="project-grid">
+                        <div id="portfolioWebsite" class="project">
+                            <h3>
+                                <a
+                                    href="https://github.com/Graf-Lab/Graf-Lab.github.io"
+                                    >Personal Portfolio Webpage</a
+                                >
+                            </h3>
+                            <p data-i18n="project-portfolio-website">
+                                A responsive portfolio website built using HTML,
+                                CSS, and JavaScript. This project showcases my
+                                skills, projects, and experiences in a clean and
+                                user-friendly interface.
+                            </p>
+                        </div>
+                        <div id="customPCBuild" class="project">
+                            <h3>
+                                <a href="https://github.com/Graf-Lab/"
+                                    >Custom PC Build</a
+                                >
+                            </h3>
+                            <p data-i18n="project-custom-pc-build">
+                                A gradual PC build project aimed at
+                                understanding hardware engineering. The build
+                                prioritizes Swiss and EU brands that support
+                                open-source software and hardware.
+                            </p>
+                        </div>
+                        <div id="project3" class="project">
+                            <h3>
+                                <a href="https://github.com/Graf-Lab/"
+                                    >Project 3</a
+                                >
+                            </h3>
+                            <p data-i18n="project-3">Words words words</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section id="skills" class="skills">
+                    <h2 data-i18n="skills-title">Skills</h2>
+                    <ul>
+                        <li data-i18n="skill-python-java">
+                            Programming Languages: Python, Java
+                        </li>
+                        <li data-i18n="skill-web-development">
+                            Web Development: HTML, CSS, JavaScript
+                        </li>
+                        <li data-i18n="skill-version-control">
+                            Version Control: Git
+                        </li>
+                        <li data-i18n="skill-data-management">
+                            Data Management: SQL, Pandas
+                        </li>
+                        <li data-i18n="skill-hardware">
+                            Hardware: PC Assembly, Troubleshooting
+                        </li>
+                        <li data-i18n="skill-networking">
+                            Networking: compTIA Networking Administration
+                        </li>
+                    </ul>
+                </section>
+                <section id="contact" class="contact">
+                    <h2 data-i18n="contact-title">Contact</h2>
+                    <p data-i18n="contact-message">
+                        Feel free to reach out for collaborations, questions, or
+                        just to connect!
+                    </p>
+                    <p><a href="mailto:grafbrum@gmail.com">Email me</a></p>
+                </section>
+            </div>
+        </div>
     </body>
     <footer>
         <p>&copy; 2024 Graf Lab. All rights reserved.</p>
