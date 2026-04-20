@@ -6,51 +6,53 @@
         <link rel="stylesheet" href="style.css" />
         <title>Graf-Lab</title>
     </head>
-    <header>
-        <h1 id="header-title">Grafton Labrum</h1>
-        <p id="header-purpose">
-            Computer Science Student & Aspiring Software Engineer
-        </p>
-        <nav>
-            <ul>
-                <li id="nav-about"><a href="#about">About</a></li>
-                <li id="nav-projects">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li id="nav-skills"><a href="#skills">Skills</a></li>
-                <li id="nav-contact"><a href="#contact">Contact</a></li>
-            </ul>
-            <select id="languageToggle" class="languageSwitch">
-                <option value="en">English</option>
-                <option value="de">Deutsch</option>
-                <option value="fr">Français</option>
-            </select>
-        </nav>
-    </header>
-    <br />
     <body>
+        <header>
+            <h1 id="header-title">Grafton Labrum</h1>
+            <p id="header-purpose">
+                Computer Science Student & Aspiring Software Engineer
+            </p>
+            <nav>
+                <ul>
+                    <li id="nav-about"><a href="#about">About</a></li>
+                    <li id="nav-projects">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li id="nav-skills"><a href="#skills">Skills</a></li>
+                    <li id="nav-contact"><a href="#contact">Contact</a></li>
+                </ul>
+                <select id="languageToggle" class="languageSwitch">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </nav>
+        </header>
+        <br />
         <div class="container">
             <div>
                 <section id="about" class="about">
                     <h2 id="about-title">About Me</h2>
-                    <p id="about-content-1">
-                        I am a computer science student with a passion for
-                        software development, data management, and hardware
-                        engineering. My academic journey has equipped me with a
-                        strong foundation in programming, algorithms, and system
-                        design. I am particularly interested in open-source
-                        technologies and building efficient, scalable solutions.
-                    </p>
-                    <p id="about-content-2">
-                        Outside of academics, I enjoy experimenting with new
-                        technologies, contributing to open-source projects, and
-                        designing hardware systems. I am currently working on a
-                        custom PC build, focusing on compatibility and
-                        performance.
-                    </p>
+                    <div id="about-content">
+                        <p id="about-content-1">
+                            I am a computer science student with a passion for
+                            software development, data management, and hardware
+                            engineering. My academic journey has equipped me
+                            with a strong foundation in programming, algorithms,
+                            and system design. I am particularly interested in
+                            open-source technologies and building efficient,
+                            scalable solutions.
+                        </p>
+                        <p id="about-content-2">
+                            Outside of academics, I enjoy experimenting with
+                            non- technologies, contributing to open-source
+                            projects, and designing hardware systems. I am
+                            currently working on a custom PC build, focusing on
+                            compatibility and performance.
+                        </p>
+                    </div>
                 </section>
-                <section id="projects" class="projects" 1cvbnm,.->
-                    012, >
+                <section id="projects" class="projects">
                     <h2 id="projects-title">Projects</h2>
                     <div class="project-grid">
                         <div id="portfolioWebsite" class="project">
@@ -94,28 +96,19 @@
             <div>
                 <section id="skills" class="skills">
                     <h2 data-i18n="skills-title">Skills</h2>
-                    <ul>
-                        <li id="skill-python-java">
-                            Programming Languages: Python, Java
-                        </li>
-                        <li id="skill-web-development">
-                            Web Development: HTML, CSS, JavaScript
-                        </li>
-                        <li id="skill-version-control">Version Control: Git</li>
-                        <li id="skill-data-management">
-                            Data Management: SQL, Pandas
-                        </li>
-                        <li id="skill-hardware">
-                            Hardware: PC Assembly, Troubleshooting
-                        </li>
-                        <li id="skill-networking">
-                            Networking: compTIA Networking Administration
-                        </li>
+                    <ul skills-list>
+                        <li>Programming Languages: Python, Java</li>
+                        <li>Web Development: HTML, CSS, JavaScript</li>
+                        <li>Version Control: Git</li>
+                        <li>Data Management: SQL, Pandas</li>
+                        <li>Hardware: PC Assembly, Troubleshooting</li>
+                        <li>Networking: compTIA Networking Administration</li>
+                        <li>Languages: English, French, German</li>
                     </ul>
                 </section>
                 <section id="contact" class="contact">
                     <h2 id="contact-title">Contact</h2>
-                    <p id="contact-message">
+                    <p id="contact-content">
                         Feel free to reach out for collaborations, questions, or
                         just to connect!
                     </p>
@@ -123,9 +116,16 @@
                 </section>
             </div>
         </div>
-        <script src="langToggle.js"></script>
+        <footer>
+            <p>&copy; 2024 Graf Lab. All rights reserved.</p>
+        </footer>
+        <script src="translations.js"></script>
+        <script>
+            document
+                .getElementById("languageToggle")
+                .addEventListener("change", function () {
+                    changeLanguage(this.value);
+                });
+        </script>
     </body>
-    <footer>
-        <p>&copy; 2024 Graf Lab. All rights reserved.</p>
-    </footer>
 </html>
