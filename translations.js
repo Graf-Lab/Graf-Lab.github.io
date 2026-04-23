@@ -119,7 +119,14 @@ function changeLanguage(lang) {
   for (const [key, value] of Object.entries(data)) {
     const element = document.getElementById(key);
     if (element) {
-      element.innerHTML = value;
+      // For navigation links, update only the text inside the <span>
+      if (key.startsWith("nav-")) {
+        element.textContent = value;
+      }
+      // For other elements, update innerHTML as before
+      else {
+        element.innerHTML = value;
+      }
     }
   }
   document.querySelector("html").setAttribute("lang", lang);
