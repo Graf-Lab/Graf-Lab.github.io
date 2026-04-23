@@ -128,10 +128,6 @@ select {
     font-family: "Space mono";
 }
 
-footer {
-    background-color: #121212;
-}
-
 nav {
     background-color: #121212;
     color: floralwhite;
@@ -144,14 +140,41 @@ nav a {
 .container {
     display: flex;
     width: 100%;
+    gap: 20px; /* Optional: Adds space between left and right sections */
 }
 
-.left {
+.container > div:first-child {
     flex: 2;
-    margin: 20px;
+    padding: 20px;
 }
 
-.right {
+.container > div:last-child {
     flex: 1;
-    margin: 20px;
+    padding: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    display: block;
+}
+
+.project h3 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.project h3 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.project p {
+    margin: 5px 0 0 50px; /* Align with the text below the image */
 }
