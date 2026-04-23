@@ -286,3 +286,13 @@ Copy
         background-color: red !important; /* Temporary test */
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+    }
+    #skills,
+    #contact {
+        order: 2 !important;
+    }
+}
