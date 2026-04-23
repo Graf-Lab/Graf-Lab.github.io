@@ -185,36 +185,48 @@ Copy
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Optional: Adjust font size for readability */
+        font-size: 14px;
+    }
+
+    #header-purpose {
+        display: none; /* Hide the purpose text */
     }
 
     header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .logo {
-        margin-bottom: 10px;
+        position: relative;
+        padding: 10px 0;
     }
 
     nav {
-        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #121212;
+        z-index: 1000;
+        padding: 10px 20px;
+        display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: center;
     }
 
     nav ul {
-        flex-wrap: wrap;
-        margin-right: 0;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 15px;
     }
 
     nav ul li {
-        margin: 5px;
+        margin: 0;
     }
 
     .languageSwitch {
-        margin: 5px 0;
+        margin-left: 10px;
+    }
+
+    main {
+        padding-top: 60px; /* Offset for fixed navbar */
     }
 
     .container {
@@ -228,16 +240,43 @@ Copy
         padding: 10px;
     }
 
+    /* Move skills and contact below projects */
+    #skills,
+    #contact {
+        order: 2;
+    }
+
+    #projects {
+        order: 1;
+    }
+
     .project-grid {
-        grid-template-columns: 1fr; /* Stack projects vertically */
-        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        display: block;
+        width: 100%;
+    }
+
+    .project h3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .project h3 img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
     }
 
     .project p {
-        margin-left: 50px; /* Align with the image */
+        margin-left: 50px;
     }
 
     #header-title {
-        font-size: 1.5rem; /* Adjust header font size */
+        font-size: 1.5rem;
     }
 }
