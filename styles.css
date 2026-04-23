@@ -178,3 +178,66 @@ nav a {
 .project p {
     margin: 5px 0 0 50px; /* Align with the text below the image */
 }
+
+css
+Copy
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Optional: Adjust font size for readability */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    .languageSwitch {
+        margin: 5px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container > div:first-child,
+    .container > div:last-child {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+        gap: 15px;
+    }
+
+    .project p {
+        margin-left: 50px; /* Align with the image */
+    }
+
+    #header-title {
+        font-size: 1.5rem; /* Adjust header font size */
+    }
+}
