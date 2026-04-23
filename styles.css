@@ -48,11 +48,80 @@ body::before {
     pointer-events: none; /* Allows clicks to pass through */
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #4c55b4;
+}
+
+#header-title {
+    background: linear-gradient(90deg, #9197d4 0%, #4c55b4 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+#header-title {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.languageSwitch {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 main {
     position: relative;
     z-index: 1; /* Ensures content is above the background and fade */
     padding: 20px;
     /* No need for height or overflow properties here */
+}
+
+a {
+    text-decoration: none;
+    color: floralwhite;
+    transition: background-color 0.4s ease;
+}
+
+a:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+    border: 1px solid #4c55b4;
+    border-radius: 4px;
+    transition: background-color 0.4s ease;
+}
+
+.contact-links a {
+    color: #4c55b4;
+    font-size: 1.5rem;
 }
 
 select {
