@@ -10,12 +10,26 @@
             href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <title>Graf-Lab</title>
     </head>
     <body>
         <main>
             <header>
-                <h1 id="header-title">Grafton Labrum</h1>
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-terminal"></i>
+                    <h1 id="header-title">Grafton Labrum</h1>
+                </a>
                 <p id="header-purpose">
                     Computer Science Student & Aspiring Software Engineer
                 </p>
@@ -52,7 +66,7 @@
             <br />
             <div class="container">
                 <div>
-                    <section id="about" class="about">
+                    <section id="about" class="left">
                         <h2 id="about-title">About Me</h2>
                         <div id="about-content">
                             <p id="about-content-1">
@@ -74,7 +88,7 @@
                             </p>
                         </div>
                     </section>
-                    <section id="projects" class="projects">
+                    <section id="projects" class="left">
                         <h2 id="projects-title">Projects</h2>
                         <div class="project-grid">
                             <div id="portfolioWebsite" class="project">
@@ -136,7 +150,7 @@
                     </section>
                 </div>
                 <div>
-                    <section id="skills" class="skills">
+                    <section id="skills" class="right">
                         <h2 data-i18n="skills-title">Skills</h2>
                         <ul skills-list>
                             <li>Programming Languages: Python, Java</li>
@@ -150,13 +164,26 @@
                             <li>Languages: English, French, German</li>
                         </ul>
                     </section>
-                    <section id="contact" class="contact">
+                    <section id="contact" class="right">
                         <h2 id="contact-title">Contact</h2>
                         <p id="contact-content">
                             Feel free to reach out for collaborations,
                             questions, or just to connect!
                         </p>
-                        <p><a href="mailto:grafbrum@gmail.com">Email me</a></p>
+                        <div class="contact-links">
+                            <a href="https://github.com/Graf-Lab"
+                                ><i class="fa-brands fa-github"></i
+                            ></a>
+                            <a href="https://linkedin.com/in/grafton-l-533b39b8"
+                                ><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                            <a href="mailto:grafbrum@gmail.com"
+                                ><i class="fa-solid fa-paper-plane"></i
+                            ></a>
+                            <a href="tel:+41772676107"
+                                ><i class="fa-solid fa-phone"></i
+                            ></a>
+                        </div>
                     </section>
                 </div>
             </div>

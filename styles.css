@@ -71,3 +71,18 @@ nav {
 nav a {
     color: floralwhite;
 }
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    flex: 2;
+    margin: 20px;
+}
+
+.right {
+    flex: 1;
+    margin: 20px;
+}

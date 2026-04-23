@@ -32,7 +32,6 @@ const translations = {
     "contact-title": "Contact",
     "contact-content": `
             <p>Feel free to reach out for collaborations, questions, or just to connect!</p>
-            <p>Email: grafton.labrum@example.com<br>GitHub: <a href="https://github.com/graftonlabrum">github.com/graftonlabrum</a></p>
         `,
     "footer-copyright": "© 2026 Grafton Labrum. All rights reserved.",
   },
@@ -70,7 +69,6 @@ const translations = {
     "contact-title": "Contact",
     "contact-content": `
             <p>N'hésitez pas à me contacter pour des collaborations, des questions ou simplement pour échanger!</p>
-            <p>Email: grafton.labrum@example.com<br>GitHub: <a href="https://github.com/graftonlabrum">github.com/graftonlabrum</a></p>
         `,
     "footer-copyright": "© 2026 Grafton Labrum. Tous droits réservés.",
   },
@@ -108,7 +106,6 @@ const translations = {
     "contact-title": "Kontakt",
     "contact-content": `
             <p>Zögern Sie nicht, mich für Kooperationen, Fragen oder einfach zum Vernetzen zu kontaktieren!</p>
-            <p>E-Mail: grafton.labrum@example.com<br>GitHub: <a href="https://github.com/graftonlabrum">github.com/graftonlabrum</a></p>
         `,
     "footer-copyright": "© 2026 Grafton Labrum. Alle Rechte vorbehalten.",
   },
