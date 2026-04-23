@@ -67,3 +67,7 @@ nav {
     background-color: #121212;
     color: floralwhite;
 }
+
+nav a {
+    color: floralwhite;
+}
