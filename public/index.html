@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Graf-Lab</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-terminal"></i>
+                    <h1 id="header-title">Grafton Labrum</h1>
+                </a>
+                <p id="header-purpose">
+                    Computer Science Student & Aspiring Software Engineer
+                </p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#about"
+                                ><span id="nav-about">About</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#projects"
+                                ><span id="nav-projects">Projects</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#skills"
+                                ><span id="nav-skills">Skills</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                ><span id="nav-contact">Contact</span></a
+                            >
+                        </li>
+                    </ul>
+                    <select id="languageToggle" class="languageSwitch">
+                        <option value="en">English</option>
+                        <option value="de">Deutsch</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </nav>
+            </header>
+            <br />
+            <div class="container">
+                <div>
+                    <section id="about" class="left">
+                        <h2 id="about-title">About Me</h2>
+                        <div id="about-content">
+                            <p id="about-content-1">
+                                I am a computer science student with a passion
+                                for software development, data management, and
+                                hardware engineering. My academic journey has
+                                equipped me with a strong foundation in
+                                programming, algorithms, and system design. I am
+                                particularly interested in open-source
+                                technologies and building efficient, scalable
+                                solutions.
+                            </p>
+                            <p id="about-content-2">
+                                Outside of academics, I enjoy experimenting with
+                                non- technologies, contributing to open-source
+                                projects, and designing hardware systems. I am
+                                currently working on a custom PC build, focusing
+                                on compatibility and performance.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="projects" class="left">
+                        <h2 id="projects-title">Projects</h2>
+                        <div class="project-grid">
+                            <div id="portfolioWebsite" class="project">
+                                <h3>
+                                    <img
+                                        src="https://cdn-icons-png.flaticon.com/512/5710/5710195.png"
+                                        alt="Portfolio Website Logo"
+                                    />
+                                    <a
+                                        href="https://github.com/Graf-Lab/Graf-Lab.github.io"
+                                        id="project1-name"
+                                        >Personal Portfolio Webpage</a
+                                    >
+                                </h3>
+                                <p id="project1-description">
+                                    A responsive portfolio website built using
+                                    HTML, CSS, and JavaScript. This project
+                                    showcases my skills, projects, and
+                                    experiences in a clean and user-friendly
+                                    interface.
+                                </p>
+                            </div>
+                            <div id="customPCBuild" class="project">
+                                <h3>
+                                    <img
+                                        src="https://cdn-icons-png.flaticon.com/512/4703/4703650.png"
+                                        alt="Portfolio Website Logo"
+                                    />
+                                    <a
+                                        href="https://github.com/Graf-Lab/"
+                                        id="project2-name"
+                                        >Custom PC Build</a
+                                    >
+                                </h3>
+                                <p id="project2-description">
+                                    A gradual PC build project aimed at
+                                    understanding hardware engineering. The
+                                    build prioritizes Swiss and EU brands that
+                                    support open-source software and hardware.
+                                </p>
+                            </div>
+                            <div id="project3" class="project">
+                                <h3>
+                                    <img
+                                        src="https://cdn-icons-png.flaticon.com/512/1465/1465893.png"
+                                        alt="Data science icon"
+                                    />
+                                    <a
+                                        href="https://github.com/Graf-Lab/"
+                                        id="project3-name"
+                                        >Project 3</a
+                                    >
+                                </h3>
+                                <p id="project3-description">
+                                    A Python-based tool for managing and
+                                    analyzing datasets. This project focuses on
+                                    improving my data management skills and
+                                    includes features for data visualization and
+                                    reporting.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <section id="skills" class="right">
+                        <h2 id="skills-title">Skills</h2>
+                        <ul id="skills-list">
+                            <li>Programming Languages: Python, Java</li>
+                            <li>Web Development: HTML, CSS, JavaScript</li>
+                            <li>Version Control: Git</li>
+                            <li>Data Management: SQL, Pandas</li>
+                            <li>Hardware: PC Assembly, Troubleshooting</li>
+                            <li>
+                                Networking: compTIA Networking Administration
+                            </li>
+                            <li>Languages: English, French, German</li>
+                        </ul>
+                    </section>
+                    <section id="contact" class="right">
+                        <h2 id="contact-title">Contact</h2>
+                        <p id="contact-content">
+                            Feel free to reach out for collaborations,
+                            questions, or just to connect!
+                        </p>
+                        <div class="contact-links">
+                            <a href="https://github.com/Graf-Lab"
+                                ><i class="fa-brands fa-github"></i
+                            ></a>
+                            <a href="https://linkedin.com/in/grafton-l-533b39b8"
+                                ><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                            <a href="mailto:grafbrum@gmail.com"
+                                ><i class="fa-solid fa-paper-plane"></i
+                            ></a>
+                            <a href="tel:+41772676107"
+                                ><i class="fa-solid fa-phone"></i
+                            ></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer>
+                <p id="footer-copyright">
+                    &copy; 2024 Graf Lab. All rights reserved.
+                </p>
+            </footer>
+        </main>
+        <script src="translations.js"></script>
+        <script>
+            document
+                .getElementById("languageToggle")
+                .addEventListener("change", function () {
+                    changeLanguage(this.value);
+                });
+        </script>
+    </body>
+</html>
