@@ -21,31 +21,43 @@ export const MobileNavBar = ({ menuOpen, setMenuOpen }) => {
       </button>
       <a
         href="#home"
-        className="tex-gray-300 text-white transitiontransition-colors"
+        onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+          ${
+            menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}
       >
-        {" "}
-        Home{" "}
+        Home
       </a>
       <a
         href="#about"
-        className="tex-gray-300 text-white transitiontransition-colors"
+        onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+          ${
+            menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}
       >
-        {" "}
-        About{" "}
+        About
       </a>
       <a
         href="#projects"
-        className="tex-gray-300 text-white transitiontransition-colors"
+        onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+          ${
+            menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}
       >
-        {" "}
-        Projects{" "}
+        Projects
       </a>
       <a
         href="#contact"
-        className="tex-gray-300 text-white transitiontransition-colors"
+        onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+          ${
+            menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}
       >
-        {" "}
-        Contact{" "}
+        Contact
       </a>
     </div>
   );
