@@ -5,6 +5,7 @@ import "./index.css";
 import { NavBar } from "./components/sections/NavBar";
 import { MobileNavBar } from "./components/sections/MobileNavBar";
 import { Home } from "./components/sections/Home";
+import { About } from "./components/sections/About";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
