@@ -19,6 +19,7 @@ function App() {
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileNavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
+        <About />
       </div>
     </>
   );
