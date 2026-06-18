@@ -8,6 +8,10 @@ export const About = () => {
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           About Me
         </h2>
+
+        <div className="glass rounded ">
+          <p>stuff stuff stuff</p>
+        </div>
       </div>
     </section>
   );
