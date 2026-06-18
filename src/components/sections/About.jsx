@@ -13,11 +13,11 @@ export const About = () => {
 
         <div className="glass rounded p-8 border-white/10 border hover:-translate-y-1 transition-all">
           <p className="text-gray-300 nb-6">
-            stuff stuff "Currently in my final year of a computer science
-            degree, I’ve completed a full-stack bootcamp and worked on projects
-            involving AI and cloud technologies. Outside of coding, I experiment
-            with Arch Linux, optimize workflows, and stay updated on tech trends
-            to refine my skills and deliver impactful solutions."
+            Currently in my final year of a computer science degree, I’ve
+            completed a full-stack bootcamp and worked on projects involving AI
+            and cloud technologies. Outside of coding, I experiment with Arch
+            Linux, optimize workflows, and stay updated on tech trends to refine
+            my skills and deliver impactful solutions.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
@@ -51,7 +51,29 @@ export const About = () => {
         </div>
         <div className="grid grid-col-1 md:grid-cols-2 gap-6 mt-8">
           <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-          </div> 
+            <h3 className="text-xl font-bold mb-4"> Education </h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>
+                <strong>B.S. in Computer Science</strong> - University of
+                Maryland Global Campus (2023-current)
+              </li>
+              <li>Relevant course work</li>
+              <li>Full-Stack Developer bootcamp (Codecademy)</li>
+            </ul>
+          </div>
+          <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <h3 className="text-xl font-bold mb-4"> Work Experience </h3>
+            <div className="space-y-4 text-gray-300">
+              <div className="font-semibold">
+                <h4> US Army Combat Medic 2015-2024 </h4>
+                <p>Did stuff</p>
+              </div>
+              <div>
+                <h4 className="font-semibold"> Burger King </h4>
+                <p>Fliped burgers</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
