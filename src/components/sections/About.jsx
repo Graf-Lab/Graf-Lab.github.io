@@ -9,8 +9,14 @@ export const About = () => {
           About Me
         </h2>
 
-        <div className="glass rounded ">
-          <p>stuff stuff stuff</p>
+        <div className="glass rounded p-8 border-white/10 border hover:-translate-y-1 transition-all">
+          <p>
+            stuff stuff "Currently in my final year of a computer science
+            degree, I’ve completed a full-stack bootcamp and worked on projects
+            involving AI and cloud technologies. Outside of coding, I experiment
+            with Arch Linux, optimize workflows, and stay updated on tech trends
+            to refine my skills and deliver impactful solutions."
+          </p>
         </div>
       </div>
     </section>
